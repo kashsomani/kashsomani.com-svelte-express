@@ -1,14 +1,14 @@
 <script>
-import Card from "./components/Card.svelte";
-
+  import Card from "./components/Card.svelte";
 </script>
 
 <main>
-  <div class="grid grid-cols-4 place-items-center">
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
+  <div class="flex h-screen">
+    <div class="grid grid-cols-3 place-items-center m-auto">
+      <Card />
+      <Card />
+      <Card />
+    </div>
   </div>
 </main>
 
@@ -17,8 +17,7 @@ import Card from "./components/Card.svelte";
   @tailwind components;
   @tailwind utilities;
 
-  main{
-    color:rgb(0, 225, 255);
+  main {
+    color: rgb(0, 225, 255);
   }
-
 </style>

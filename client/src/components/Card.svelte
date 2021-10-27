@@ -1,18 +1,16 @@
-<div class="grid grid-cols-1 p-2 m02">
+<div class="grid grid-cols-1 p-2 place-items-center">
   <div class="card p-2 text-center">
-    <p>
-      New Website Card
-    </p>
-    </div>
+    <p>New Website Card</p>
+  </div>
 </div>
 
 <style lang="postcss">
   .card {
-    backdrop-filter: blur(14px) saturate(185%);
-    -webkit-backdrop-filter: blur(14px) saturate(185%);
-    background-color: rgba(5, 206, 199, 0.24);
-    border-radius: 12px;
-    border: 1px solid rgba(2, 139, 141, 0.616);
+    width: 18em;
+    height: 18em;
+    background: rgba(0, 240, 255, 0.2);
+    border: 1px solid rgba(0, 240, 255, 0.6);
+    border-radius: 80px;
     @apply grid grid-cols-1 place-items-center;
   }
 </style>
