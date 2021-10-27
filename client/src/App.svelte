@@ -1,17 +1,24 @@
 <script>
-	export let name;
+import Card from "./components/Card.svelte";
+
 </script>
 
 <main>
-	<div class="bg-red-700">
-		hi
-	</div>
-	<h1>hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+  <div class="grid grid-cols-4 place-items-center">
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+  </div>
 </main>
 
 <style lang="postcss" global>
-	@tailwind base;
-	@tailwind components;
-	@tailwind utilities;
-  </style>
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  main{
+    color:rgb(0, 225, 255);
+  }
+
+</style>
