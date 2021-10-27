@@ -6,7 +6,7 @@
   <div class="flex h-screen">
     <div class="grid grid-cols-3 place-items-center m-auto">
       <Card />
-      <Card />
+      <Card height="24em" width="24em"/>
       <Card />
     </div>
   </div>
