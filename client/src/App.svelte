@@ -1,15 +1,11 @@
 <script>
-  import Card from "./components/Card.svelte";
+  import Router from './Router/index.svelte'
 </script>
-
+<svelte:head>
+  <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+</svelte:head>
 <main>
-  <div class="flex h-screen">
-    <div class="grid grid-cols-3 place-items-center m-auto">
-      <Card />
-      <Card height="24em" width="24em"/>
-      <Card />
-    </div>
-  </div>
+  <Router/>
 </main>
 
 <style lang="postcss" global>
