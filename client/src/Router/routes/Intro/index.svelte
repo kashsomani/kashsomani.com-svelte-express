@@ -1,5 +1,4 @@
 <div class="flex h-screen">
-  <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
   <div class="grid grid-cols-1 place-items-center m-auto text-9xl">
     KASH SOMANI
   </div>
