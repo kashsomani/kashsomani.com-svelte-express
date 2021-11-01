@@ -41,7 +41,6 @@
   }
   div {
     font-family: "Orbitron", sans-serif;
-    color: rgb(0, 0, 0);
     /* font-family: Bruno Ace; */
     /* font-family: Bungee Shade; */
     /* font-family: Codystar; */
