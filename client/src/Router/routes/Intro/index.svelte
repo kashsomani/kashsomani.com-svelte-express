@@ -14,11 +14,19 @@
     <div class="w-full">
       <div id="arrow-button" class="grid grid-cols-1 place-items-center w-full">
         <div>
-          <a href="#" on:mouseenter={()=>(hover=true)} on:mouseleave={()=>(hover=false)} >
+          <a
+            href="#"
+            on:mouseenter={() => (hover = true)}
+            on:mouseleave={() => (hover = false)}
+          >
             {#if hover}
-              <img src="./assets/icons/arrow-right-teal.svg" alt="" width="full">
+              <img
+                src="./assets/icons/arrow-right-teal.svg"
+                alt=""
+                width="full"
+              />
             {:else}
-              <img src="./assets/icons/arrow-right.svg" alt="" width="full"/>
+              <img src="./assets/icons/arrow-right.svg" alt="" width="full" />
             {/if}
           </a>
         </div>
@@ -28,7 +36,7 @@
 </div>
 
 <style>
-  #arrow-button{
+  #arrow-button {
     height: 0.5em;
   }
   div {
