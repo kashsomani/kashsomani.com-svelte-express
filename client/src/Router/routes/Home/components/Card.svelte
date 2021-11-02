@@ -1,6 +1,7 @@
 <script>
   export let width = "18em";
   export let height = "18em";
+  export let text = "";
 </script>
 
 <div
@@ -8,16 +9,19 @@
   class="grid grid-cols-1 p-2 place-items-center"
 >
   <div class="card p-2 text-center">
-    <p>New Website Card</p>
+    <p>{text}</p>
   </div>
 </div>
 
 <style lang="postcss">
   .card {
+    color: #a0eee0;
     width: var(--width);
     height: var(--height);
-    background: rgba(0, 240, 255, 0.2);
-    border: 1px solid rgba(0, 240, 255, 0.6);
+    backdrop-filter: blur(4px) saturate(143%);
+    -webkit-backdrop-filter: blur(4px) saturate(143%);
+    background: rgba(0, 238, 255, 0.205);
+    border: 1px solid rgba(0, 255, 191, 0.3);
     border-radius: 80px;
     @apply grid grid-cols-1 place-items-center;
   }

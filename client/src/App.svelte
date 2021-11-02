@@ -14,6 +14,6 @@
   @tailwind utilities;
 
   main {
-    color: rgb(0, 225, 255);
+    color: #00ffd0;
   }
 </style>

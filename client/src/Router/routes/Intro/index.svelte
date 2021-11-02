@@ -6,7 +6,7 @@
 
 <div
   class="flex h-screen"
-  transition:fade={{ duration: 1000 }}
+  in:fade={{ duration: 1000 }}
   on:introend={() => (arrow = true)}
 >
   <div class="grid grid-cols-1 place-items-center m-auto text-9xl w-full">
@@ -15,7 +15,7 @@
       <div id="arrow-button" class="grid grid-cols-1 place-items-center w-full">
         <div>
           <a
-            href="#"
+            href="#/home"
             on:mouseenter={() => (hover = true)}
             on:mouseleave={() => (hover = false)}
           >
@@ -24,9 +24,10 @@
                 src="./assets/icons/arrow-right-teal.svg"
                 alt=""
                 width="full"
+                in:fade={{ duration: 200 }}
               />
             {:else}
-              <img src="./assets/icons/arrow-right.svg" alt="" width="full" />
+              <img src="./assets/icons/arrow-right.svg" alt="" width="full" in:fade={{ duration: 200 }}/>
             {/if}
           </a>
         </div>
@@ -40,6 +41,7 @@
     height: 0.5em;
   }
   div {
+    color: #00ffd0;
     font-family: "Orbitron", sans-serif;
     /* font-family: Bruno Ace; */
     /* font-family: Bungee Shade; */
